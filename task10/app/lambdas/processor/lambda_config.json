@@ -11,16 +11,14 @@
   "dependencies": [],
   "event_sources": [],
   "env_variables": {
-    "target_table_name": "${target_table}"
+    "WEATHER_TABLE": "${target_table}"
   },
-  "publish_version": false,
+  "tracing_mode": "Active",
+  "publish_version": true,
   "alias": "${lambdas_alias_name}",
   "url_config": {
     "auth_type": "NONE"
   },
-  "tracing_mode": "Active",
-  "logs_expiration": "${logs_expiration}",
   "ephemeral_storage": 512,
-  "tags": {},
-  "layers": []
+  "tags": {}
 }

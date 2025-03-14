@@ -8,7 +8,7 @@ AWSXRay.captureAWS(AWS);
 
 // Load environment variables
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
-const TABLE_NAME = process.env.target_table_name || "Weather";
+const TABLE_NAME = process.env.WEATHER_TABLE || "Weather";
 
 // Open-Meteo API URL
 const WEATHER_API_URL =
